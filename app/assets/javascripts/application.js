@@ -10,7 +10,15 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery-1.11.1.min
+//= require jquery-migrate-1.2.1.min
+//= require jquery.easing-1.3
+//= require jquery.prettyPhoto
+//= require jquery.validate
+//= require jquery.address-1.5.min
+//= require jquery.isotope.min
+//= require jquery.circliful.min
+//= require css_browser_selector
+//= require bootstrap
+//= require wow.min
+//= require script
