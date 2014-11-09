@@ -18,7 +18,16 @@
       <noscript>JavaScript is off. Please enable to view full site.</noscript>
     </div>
 
-    <%= yield %>
+    <div class="wrapper">
+      <div class="container">
+        <%= render 'shared/header' %>
 
+        <%= yield %>
+
+        <%= render 'shared/footer' %>
+      </div>
+    </div>
+
+    <a class="goto-top" href="#gotop"></a>
   </body>
 </html>

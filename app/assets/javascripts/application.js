@@ -21,4 +21,4 @@
 //= require css_browser_selector
 //= require bootstrap
 //= require wow.min
-//= require script
+//= require general

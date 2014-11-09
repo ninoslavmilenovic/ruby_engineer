@@ -131,7 +131,7 @@ $(document).ready(function() {
           {
             $(".contact-form .submit").fadeOut(function() {
               $('#loading').css('visibility', 'visible');
-              $.post('submit.php', $(".contact-form").serialize(),
+              $.post('/contact', $(".contact-form").serialize(),
                       function(data) {
                         $(".contact-form input,.contact-form textarea").not('.submit').val('');
                         $('.message-box').html(data);
