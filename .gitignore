@@ -17,3 +17,6 @@
 
 # Ignore bundle.
 /vendor/bundle
+
+# Ignore configuration files.
+/config/**/*.yml
