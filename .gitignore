@@ -20,3 +20,6 @@
 
 # Ignore configuration files.
 /config/**/*.yml
+
+# Ignore precompiled assets.
+/public/assets/*
