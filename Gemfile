@@ -15,6 +15,5 @@ group :development do
   gem 'spring'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv', '~> 2.0', require: false
-  gem 'capistrano-thin'
   gem 'better_errors'
 end
