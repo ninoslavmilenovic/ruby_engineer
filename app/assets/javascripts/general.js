@@ -134,7 +134,7 @@ $(document).ready(function() {
               $.post('/contact', $(".contact-form").serialize(),
                       function(data) {
                         $(".contact-form input,.contact-form textarea").not('.submit').val('');
-                        $('.message-box').html(data);
+                        $('.message-box').html(data.message);
                         $('#loading').css('visibility', 'hidden');
                         $(".contact-form").css('display', 'none');
                         // $(".contact-form .submit").removeClass('disabled').css('display', 'block');

@@ -12,8 +12,7 @@
         <div class="col-xs-12 col-md-8"> 
           <div class="contact-form-holder">
             <div class="message-box"></div>
-
-            <form id="contact-form" class="contact-form" method="post">
+            <%= form_tag(contact_index_path, class: 'contact-form', id: 'contact-form', remote: true, authenticity_token: true) do %>
               <div class="col-xs-12 col-sm-6 no-margin">
                 <div class="control-group">
                   <div class="controls">
@@ -54,9 +53,7 @@
                   <img alt="Loading..." src="/assets/loader.gif" />
                 </div>
               </div>
-
-            </form>
-
+            <% end %>
           </div>
         </div>
 
