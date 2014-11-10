@@ -3,9 +3,9 @@ class ContactMailer < ActionMailer::Base
 
   def contact_email(params)
     mail(content_type: "text/html", 
-      to: params[:email], 
+      to: "nino.mil@gmail.com", 
       body: params[:message],
-      subject: "rubyengineer.com Contact Form - #{params[:name]} - #{params[:subject]}"
+      subject: "rubyengineer.com Contact Form - #{params[:email]} - #{params[:name]} - #{params[:subject]}"
       )
   end
 end
