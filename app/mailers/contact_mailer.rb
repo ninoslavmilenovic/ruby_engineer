@@ -1,11 +1,14 @@
 class ContactMailer < ActionMailer::Base
   default from: "coffee@rubyengineer.com"
 
+  DEFAULT_TO = "nino.mil@gmail.com"
+
   def contact_email(params)
-    mail(content_type: "text/html", 
-      to: "nino.mil@gmail.com", 
-      body: params[:message],
-      subject: "rubyengineer.com Contact Form - #{params[:email]} - #{params[:name]} - #{params[:subject]}"
-      )
+    @name     = params[:name]
+    @email    = params[:email]
+    @subject  = params[:subject]
+    @body     = params[:message]
+
+    mail to: DEFAULT_TO, subject: "rubyengineer.com ★ Contact Form"
   end
 end
