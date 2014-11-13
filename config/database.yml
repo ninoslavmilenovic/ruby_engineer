@@ -14,8 +14,8 @@ development:
   reconnect: false
   database: ruby_engineer_development
   pool: 5
-  username: ruby_engineer
-  password: 
+  username: <%= ENV['RE_DB_DEVELOPMENT_USERNAME'] %>
+  password: <%= ENV['RE_DB_DEVELOPMENT_PASSWORD'] %>
   host: localhost
   port: 3306
 
@@ -28,8 +28,8 @@ test:
   reconnect: false
   database: ruby_engineer_test
   pool: 5
-  username: ruby_engineer
-  password: 
+  username: <%= ENV['RE_DB_TEST_USERNAME'] %>
+  password: <%= ENV['RE_DB_TEST_PASSWORD'] %>
   host: localhost
   port: 3306
 
@@ -39,7 +39,7 @@ production:
   reconnect: false
   database: ruby_engineer_production
   pool: 5
-  username: ruby_engineer
-  password:
+  username: <%= ENV['RE_DB_PRODUCTION_USERNAME'] %>
+  password: <%= ENV['RE_DB_PRODUCTION_PASSWORD'] %>
   host: localhost
   port: 3306
