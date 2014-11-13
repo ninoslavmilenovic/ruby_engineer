@@ -1,7 +1,7 @@
 class ContactMailer < ActionMailer::Base
   default from: "coffee@rubyengineer.com"
 
-  DEFAULT_TO = "nino.mil@gmail.com"
+  DEFAULT_TO = "coffee@rubyengineer.com"
 
   def contact_email(params)
     @name     = params[:name]
