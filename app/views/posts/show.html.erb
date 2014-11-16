@@ -30,10 +30,10 @@
               <ul class="social-icons small">
                 <li><strong>Share on</strong></li>
                 
-                <li ><a class="fa fa-facebook" href="#"></a></li>
-                <li ><a class="fa fa-twitter" href="#"></a></li>
-                <li ><a class="fa fa-pinterest" href="#"></a></li>
-                <li ><a class="fa fa-linkedin" href="#"></a></li>
+                <li ><a class="fa fa-facebook" href="http://www.facebook.com/share.php?u=<%= post_url @post %>&amp;title=<%= @post.title %>"></a></li>
+                <li ><a class="fa fa-twitter" href="http://twitter.com/home?status=<%=@post.title%>+<%= post_url @post %>"></a></li>
+                <li ><a class="fa fa-pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media=<%= image_url(@post.image.url(:medium)) %>&amp;url=<%= post_url @post %>&amp;is_video=false&amp;description=<%= @post.title %>"></a></li>
+                <li ><a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= post_url @post %>&amp;title=<%= @post.title %>&amp;source=<%= root_url %>"></a></li>
               </ul> 
             </div>
             <div class="col-xs-12 col-sm-2 counter-holder">
