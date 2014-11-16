@@ -180,17 +180,26 @@ $(document).ready(function() {
     });
 
     function scrollToSection(destSection) {
-      $('html, body').stop().animate({
-        scrollTop: $(destSection).offset().top + scrollOffset
-      }, 2000, 'easeInOutExpo');
+      var destination = $(destSection);
+      if (destination.length) {
+        $('html, body').stop().animate({
+          scrollTop: destination.offset().top + scrollOffset
+        }, 2000, 'easeInOutExpo');
+      }
     }
 
     $('.nav-menu a').bind('click', function(event) {
-      event.preventDefault();
       var clickedMenu = $(this);
-      $('.nav-menu .active').toggleClass('active');
-      clickedMenu.parent().toggleClass('active');
-      scrollToSection(clickedMenu.attr('href'));
+      var clickedMenuHref = clickedMenu.attr('href');
+
+      if (document.location.pathname != '/') {
+        document.location = '/' + clickedMenuHref;
+      } else {
+        event.preventDefault();
+        $('.nav-menu .active').toggleClass('active');
+        clickedMenu.parent().toggleClass('active');
+        scrollToSection(clickedMenuHref);
+      }
     });
 
   })(jQuery);

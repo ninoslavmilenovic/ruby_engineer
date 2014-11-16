@@ -2,6 +2,7 @@
 
 ### Configuration ###
 
+> Install ImageMagick
 > Export following environmental variables:
 
 + RE_GMAIL_USERNAME
@@ -13,3 +14,6 @@
 + RE_DB_PRODUCTION_PASSWORD
 + RE_DB_TEST_USERNAME
 + RE_DB_TEST_PASSWORD
++ RE_DEFAULT_ADMIN_PASSWORD
++ RE_DISQUS_SECRET_KEY
++ RE_DISQUS_ACCESS_TOKEN

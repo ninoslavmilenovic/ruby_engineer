@@ -6474,6 +6474,8 @@ h4 {
 .social-icons {
   list-style: none;
   padding: 0;
+}
+.contact-info .social-icons {
   margin: 10px 0 0 0;
 }
 .social-icons.big li {

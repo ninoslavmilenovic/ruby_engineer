@@ -1,29 +1,15 @@
 <%= render 'shared/info' %>
 
-<hr class="le-hr">
-
 <%= render 'shared/profile' %>
-
-<hr class="le-hr">
 
 <%= render 'shared/education' %>
 
-<hr class="le-hr">
-
 <%= render 'shared/experience' %>
-
-<hr class="le-hr">
 
 <%= render 'shared/skills' %>
 
-<hr class="le-hr">
-
 <%= render 'shared/clients' %>
 
-<hr class="le-hr">
-
-<%#= render 'shared/blog' %>
-
-<!--hr class="le-hr"-->
+<%= render 'shared/blog' if available_posts? %>
 
 <%= render 'shared/contact' %>

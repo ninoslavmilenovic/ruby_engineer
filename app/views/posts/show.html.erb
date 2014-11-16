@@ -1,0 +1,68 @@
+<section class="single-post">
+  <div class="sticky-paper-head has-shadow">
+    <div class="content">
+      <h1>Blog Post</h1>
+    </div>
+  </div>
+
+  <div class="sticky-paper-body has-shadow">
+    <div class="content">
+      <div class="short-desc">
+        <%= @post.title %>
+      </div>
+   
+      <div class="single-post">
+        <div class="date">
+          <%= format_date(@post.created_at) %>
+        </div>
+       
+        <div class="post-image">
+          <%= image_tag(@post.image.url(:medium)) %>
+        </div>
+
+        <div class="content">
+          <%= markdown(@post.content) %>
+        </div>
+
+        <div class="share-row">
+          <div class="row">
+            <div class="col-xs-12 col-sm-10">
+              <ul class="social-icons small">
+                <li><strong>Share on</strong></li>
+                
+                <li ><a class="fa fa-facebook" href="#"></a></li>
+                <li ><a class="fa fa-twitter" href="#"></a></li>
+                <li ><a class="fa fa-pinterest" href="#"></a></li>
+                <li ><a class="fa fa-linkedin" href="#"></a></li>
+              </ul> 
+            </div>
+            <div class="col-xs-12 col-sm-2 counter-holder">
+              <div class="counter">
+                <span><%= @post.unique_views %></span> views 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="le-hre">
+
+<section>
+  <div class="sticky-paper-head has-shadow">
+    <div class="content ">
+      <h1>comments</h1>
+    </div>
+  </div>
+
+  <div class="sticky-paper-body has-shadow " >
+    <div class="content">
+      <%- disqus_thread %>
+    </div>
+  </div>
+</section>
+
+<%= render 'shared/contact' %>

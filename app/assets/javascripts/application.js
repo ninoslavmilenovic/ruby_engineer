@@ -18,7 +18,10 @@
 //= require jquery.address-1.5.min
 //= require jquery.isotope.min
 //= require jquery.circliful.min
+//= require disqus_rails
 //= require css_browser_selector
 //= require bootstrap
 //= require wow.min
+//= require highlight.min
+//= require highlight_init
 //= require general
