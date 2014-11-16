@@ -1,9 +1,9 @@
 # rubyengineer.com #
 
-### Configuration ###
+### Setup ###
 
-> Install ImageMagick
-> Export following environmental variables:
+1. Install ImageMagick
+2. Export following environmental variables:
 
 + RE_GMAIL_USERNAME
 + RE_GMAIL_PASSWORD
@@ -17,6 +17,5 @@
 + RE_DEFAULT_ADMIN_PASSWORD
 + RE_DISQUS_SECRET_KEY
 + RE_DISQUS_ACCESS_TOKEN
-+ RE_DEFAULT_ADMIN_PASSWORD
 + RE_DEVISE_SECRET_KEY
 + RE_DEVISE_PEPPER
