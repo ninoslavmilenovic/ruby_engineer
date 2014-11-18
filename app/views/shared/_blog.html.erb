@@ -19,7 +19,7 @@
                   <div class="date">
                     <%= format_date(post.created_at) %>
                   </div> 
-                  <%= image_tag(post.image.url(:thumb)) %>
+                  <%= link_to(image_tag(post.image.url(:thumb)), post_path(post)) %>
                 </div>
                 <div class="info-area">
 
