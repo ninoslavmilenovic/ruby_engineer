@@ -178,6 +178,10 @@ ul li, ol li {
 .content p {
   white-space: pre-wrap;
 }
+
+h1.subject {
+  margin-top: 10px;
+}
 </style>
 </head>
 
@@ -194,7 +198,7 @@ ul li, ol li {
       <table>
         <tr>
           <td>
-            <h1><%= @subject %></h1>
+            <h1 class="subject"><%= @subject %></h1>
             <p><%= @body %></p>
             
             <h2>Details</h2>

@@ -9,6 +9,6 @@ class ContactMailer < ActionMailer::Base
     @subject  = params[:subject]
     @body     = params[:message]
 
-    mail to: DEFAULT_TO, subject: "rubyengineer.com ★ Contact Form"
+    mail to: DEFAULT_TO, subject: "rubyengineer.com ● Contact Form"
   end
 end
