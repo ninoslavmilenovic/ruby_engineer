@@ -1,23 +1,24 @@
-<section class="single-post">
+<section class="single-post big-name">
   <div class="sticky-paper-head has-shadow">
     <div class="content">
-      <h1>Blog Post</h1>
+      <h1>Nino</h1>
+      <div class="short-tag">
+        ruby on rails engineer
+      </div>
     </div>
-  </div>
+  <div class="shadow"></div></div>
+
+  <a name="title"></a>
 
   <div class="sticky-paper-body has-shadow">
     <div class="content">
       <div class="short-desc">
         <%= @post.title %>
       </div>
-   
+
       <div class="single-post">
         <div class="date">
           <%= format_date(@post.created_at) %>
-        </div>
-       
-        <div class="post-image">
-          <%= image_tag(@post.image.url(:medium)) %>
         </div>
 
         <div class="content">
@@ -30,10 +31,9 @@
               <ul class="social-icons small">
                 <li><strong>Share on</strong></li>
                 
-                <li ><a class="fa fa-facebook" href="http://www.facebook.com/share.php?u=<%= post_url @post %>&amp;title=<%= @post.title %>"></a></li>
-                <li ><a class="fa fa-twitter" href="http://twitter.com/home?status=<%=@post.title%>+<%= post_url @post %>"></a></li>
-                <li ><a class="fa fa-pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media=<%= image_url(@post.image.url(:medium)) %>&amp;url=<%= post_url @post %>&amp;is_video=false&amp;description=<%= @post.title %>"></a></li>
-                <li ><a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= post_url @post %>&amp;title=<%= @post.title %>&amp;source=<%= root_url %>"></a></li>
+                <li><a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= post_position(post_url(@post)) %>&amp;title=<%= @post.title %>&amp;source=<%= root_url %>"></a></li>
+                <li><a class="fa fa-twitter" href="http://twitter.com/home?status=<%= @post.title %>+<%= post_position(post_url(@post)) %>"></a></li>
+                <li><a class="fa fa-facebook" href="http://www.facebook.com/share.php?u=<%= post_position(post_url(@post)) %>&amp;title=<%= @post.title %>"></a></li>
               </ul> 
             </div>
             <div class="col-xs-12 col-sm-2 counter-holder">
@@ -64,5 +64,3 @@
     </div>
   </div>
 </section>
-
-<%= render 'shared/contact' %>
