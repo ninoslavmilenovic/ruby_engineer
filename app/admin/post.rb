@@ -7,7 +7,7 @@ ActiveAdmin.register Post do
       f.input :description
       f.input :content
       f.input :published
-      f.input :image, required: false, as: :file
+      f.input :image, required: false, as: :file, hint: "Image will be scaled to #{Post::IMAGE_THUMB_SIZE}"
       if (f.object.image.present?)
         f.input :remove_image, as: :boolean, required: false, label: 'Remove Image'
       end

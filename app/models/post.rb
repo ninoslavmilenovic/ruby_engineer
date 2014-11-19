@@ -1,8 +1,10 @@
 class Post < ActiveRecord::Base
+  IMAGE_THUMB_SIZE = '340x155'
+
   attr_accessor :remove_image
 
   is_impressionable
-  has_attached_file :image, styles: { medium: '782x357>', thumb: '340x155>' }, default_url: "blog/:style/missing.png"
+  has_attached_file :image, styles: { thumb: "#{IMAGE_THUMB_SIZE}>" }, default_url: "blog/:style/missing.png"
 
   before_validation { self.image.clear if remove_image? }
 
@@ -13,7 +15,7 @@ class Post < ActiveRecord::Base
   validates :content, length: { in: 3..60000 }
   validates :published, inclusion: { in: [true, false] }
   validates_attachment_content_type :image, content_type: ['image/jpg', 'image/jpeg', 'image/png']
-  validates_attachment_size :image, :less_than => 2.megabytes
+  validates_attachment_size :image, :less_than => 1.megabyte
 
   scope :published, -> { where(published: true) }
 
