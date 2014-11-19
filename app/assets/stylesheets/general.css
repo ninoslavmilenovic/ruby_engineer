@@ -8410,3 +8410,16 @@ select.top-drop-menu {
 .ie .portfolio-holder .portfolio-item a {
   padding: 5px;
 }
+.message-box {
+  display: none;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 7px;
+  position: relative;
+  background-color: #d8cdbb;
+  color: #272425;
+  padding: 10px 0;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
