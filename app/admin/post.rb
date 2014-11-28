@@ -45,7 +45,7 @@ ActiveAdmin.register Post do
       row :published
       if (post.image.present?)
         row :image do
-          image_tag(post.image.url(:thumb))
+          image_tag(post.image.url(:medium), width: 340)
         end
       end
     end
