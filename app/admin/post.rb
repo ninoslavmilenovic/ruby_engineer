@@ -7,7 +7,7 @@ ActiveAdmin.register Post do
       f.input :description
       f.input :content
       f.input :published
-      f.input :image, required: false, as: :file, hint: "Image will be scaled to #{Post::IMAGE_THUMB_SIZE}"
+      f.input :image, required: false, as: :file, hint: "Image will be scaled to #{Post::IMAGE_MEDIUM_SIZE} and #{Post::IMAGE_THUMB_SIZE} respectively."
       if (f.object.image.present?)
         f.input :remove_image, as: :boolean, required: false, label: "Remove Image"
       end
@@ -24,7 +24,7 @@ ActiveAdmin.register Post do
     column :published
     column :image do |post|
       if post.image.present?
-        image_tag(post.image.url(:thumb))
+        image_tag(post.image.url(:medium), width: 225)
       else
         "No Image"
       end
