@@ -149,8 +149,11 @@ $(document).ready(function() {
     $('.nav-menu a').address($(this).attr('href'));
     $('.top-drop-menu').change(function() {
       var loc = ($(this).find('option:selected').val());
-      $('.nav-menu a').address(loc);
-
+      if (document.location.pathname != '/') {
+        document.location = '/' + loc;
+      } else {
+        $('.nav-menu a').address(loc);
+      }
     });
 
     $.address.change(function(event) {

@@ -3,12 +3,10 @@ class ContactController < ApplicationController
     @contact_email = ContactMailer.contact_email(contact_params)
 
     respond_to do |format|
-      if @contact_email.deliver
-        format.json do
+      format.json do
+        if @contact_email.deliver
           render json: { message: "Thank you #{contact_params[:name]}! Your email is forwarded and Nino will get back to you during his next coffee break." } 
-        end
-      else
-        format.json do 
+        else
           render json: { message: "Something went wrong!" } 
         end
       end

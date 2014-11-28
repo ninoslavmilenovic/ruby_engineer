@@ -2,14 +2,14 @@ ActiveAdmin.register Post do
   permit_params :title, :description, :content, :published, :image, :remove_image
 
   form html: { multipart: true } do |f|
-    f.inputs 'Post Details' do
+    f.inputs "Post Details" do
       f.input :title
       f.input :description
       f.input :content
       f.input :published
       f.input :image, required: false, as: :file, hint: "Image will be scaled to #{Post::IMAGE_THUMB_SIZE}"
       if (f.object.image.present?)
-        f.input :remove_image, as: :boolean, required: false, label: 'Remove Image'
+        f.input :remove_image, as: :boolean, required: false, label: "Remove Image"
       end
     end
     f.actions

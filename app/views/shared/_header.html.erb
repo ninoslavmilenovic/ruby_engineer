@@ -77,8 +77,14 @@
       </option>
 
       <option value="#clients">
-        clients
+        Clients
       </option>
+
+      <% if available_posts? %>
+        <option value="#blog">
+          Blog
+        </option>
+      <% end %>
 
       <option value="#contact">
         Contact

@@ -1,5 +1,5 @@
 /*
-Content Tabel
+Content Table
 +---------------+
 
 
@@ -8183,7 +8183,7 @@ header .avatar:after {
   bottom: 0;
   margin: auto;
   top: 0;
-  background-image: url(/assets/page-loader.GIF);
+  background-image: url(/assets/page-loader.gif);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
