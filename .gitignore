@@ -23,3 +23,7 @@
 
 # Ignore paperclip uploads.
 /public/system
+
+# Ignore IDE config.
+.idea
+
