@@ -24,5 +24,4 @@
 //= require wow.min
 //= require highlight.min
 //= require highlight_init
-//= require google_analytics
 //= require general
