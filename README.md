@@ -19,3 +19,10 @@
 + RE_DISQUS_ACCESS_TOKEN
 + RE_DEVISE_SECRET_KEY
 + RE_DEVISE_PEPPER
+
+### Install ###
+
+```bash
+$ bin/rake sitemap:generate
+$ bin/bundle exec whenever
+```

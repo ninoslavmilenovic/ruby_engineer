@@ -28,7 +28,7 @@ set :linked_files, %w{.rbenv-vars}
 
 # Default value for linked_dirs is []
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-set :linked_dirs, %w{public/system}
+set :linked_dirs, %w{public/system public/sitemaps}
 
 # Default value for default_env is {}
 set :default_env, { path: '~/.rbenv/shims:~/.rbenv/bin:$PATH' }

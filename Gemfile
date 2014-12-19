@@ -15,6 +15,8 @@ gem 'redcarpet'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'paperclip', '~> 4.2'
+gem 'dynamic_sitemaps'
+gem 'whenever', require: false
 
 group :development do
   gem 'spring'

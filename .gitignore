@@ -27,3 +27,5 @@
 # Ignore IDE config.
 .idea
 
+# Ignore sitemaps.
+/public/sitemaps
