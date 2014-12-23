@@ -7140,8 +7140,8 @@ header .avatar:before {
   width: 95%;
   height: 95%;
   position: absolute;
-  /*border: 10px solid #a62215;*/
-  border: 3px solid #d8cdbb;
+  border: 10px solid #a62215;
+  /*border: 3px solid #d8cdbb;*/
   left: 0;
   top: 0;
   background-color: transparent;
