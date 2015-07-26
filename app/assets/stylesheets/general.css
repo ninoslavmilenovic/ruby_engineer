@@ -7061,18 +7061,18 @@ header .head-image:after {
 }
 header .avatar {
   z-index: 500;
-  -webkit-border-top-right-radius: 500px;
-  -webkit-border-bottom-right-radius: 500px;
-  -webkit-border-bottom-left-radius: 500px;
-  -webkit-border-top-left-radius: 500px;
-  -moz-border-radius-topright: 500px;
-  -moz-border-radius-bottomright: 500px;
-  -moz-border-radius-bottomleft: 500px;
-  -moz-border-radius-topleft: 500px;
-  border-top-right-radius: 500px;
-  border-bottom-right-radius: 500px;
-  border-bottom-left-radius: 500px;
-  border-top-left-radius: 500px;
+  -webkit-border-top-right-radius: 180px;
+  -webkit-border-bottom-right-radius: 80px;
+  -webkit-border-bottom-left-radius: 60px;
+  -webkit-border-top-left-radius: 70px;
+  -moz-border-radius-topright: 180px;
+  -moz-border-radius-bottomright: 80px;
+  -moz-border-radius-bottomleft: 60px;
+  -moz-border-radius-topleft: 70px;
+  border-top-right-radius: 180px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 70px;
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -7083,7 +7083,8 @@ header .avatar {
   width: 300px;
   height: 300px;
   color: #272425;
-  border: 10px solid #272425;
+  /*border: 10px solid #272425;*/
+  border: 10px solid rgba(39, 36, 37, 0.5);
   display: inline-block;
   text-align: center;
   position: relative;
@@ -7110,17 +7111,17 @@ header .avatar:before {
 }
 header .avatar img {
   -webkit-border-top-right-radius: 500px;
-  -webkit-border-bottom-right-radius: 500px;
-  -webkit-border-bottom-left-radius: 500px;
-  -webkit-border-top-left-radius: 500px;
+  -webkit-border-bottom-right-radius: 220px;
+  -webkit-border-bottom-left-radius: 220px;
+  -webkit-border-top-left-radius: 220px;
   -moz-border-radius-topright: 500px;
-  -moz-border-radius-bottomright: 500px;
-  -moz-border-radius-bottomleft: 500px;
-  -moz-border-radius-topleft: 500px;
+  -moz-border-radius-bottomright: 220px;
+  -moz-border-radius-bottomleft: 220px;
+  -moz-border-radius-topleft: 220px;
   border-top-right-radius: 500px;
-  border-bottom-right-radius: 500px;
-  border-bottom-left-radius: 500px;
-  border-top-left-radius: 500px;
+  border-bottom-right-radius: 220px;
+  border-bottom-left-radius: 220px;
+  border-top-left-radius: 220px;
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -7140,8 +7141,9 @@ header .avatar:before {
   width: 95%;
   height: 95%;
   position: absolute;
-  border: 10px solid #a62215;
-  /*border: 3px solid #d8cdbb;*/
+  /*border: 10px solid #a62215;*/
+  /*border: 3px dotted #d8cdbb;*/
+  /*border: 3px dotted rgba(216, 205, 187, 0.5);*/
   left: 0;
   top: 0;
   background-color: transparent;

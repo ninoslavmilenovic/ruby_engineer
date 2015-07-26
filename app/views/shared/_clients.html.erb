@@ -12,19 +12,27 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="portfolio-holder">
-            <!--div id="filters" class="group-selectors">
-              <a href="#all" data-filter="*" class="active">all</a>
-              <a href="#marketing" data-filter=".marketing">marketing</a>
-              <a href="#streaming" data-filter=".streaming">streaming</a>
-              <a href="#entertainment" data-filter=".entertainment">entertainment</a>
-              <a href="#education" data-filter=".education">education</a>
-            </div-->
-
             <div id="portfolio-grid" class="row">
+
               <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item marketing">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work01.jpg') %>">
-                  <%= image_tag('portfolio/work01.jpg', alt: 'Aquipa Partner', width: 350) %>
-                </a>
+                <a><%= image_tag('portfolio/work09.jpg', alt: 'Conichi', width: 350) %></a>
+                <div class="holder">
+                  <div class="paper has-shadow title">
+                    <div class="content">
+                      Conichi
+                    </div>
+                  </div>
+
+                  <div class="paper has-shadow category">
+                    <div class="content">
+                      smart hotels platform
+                    </div>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item marketing">
+                <a><%= image_tag('portfolio/work01.jpg', alt: 'Aquipa Partner', width: 350) %></a>
                 <div class="holder">
                   <div class="paper has-shadow title">
                     <div class="content">
@@ -40,87 +48,8 @@
                 </div>
               </figure>
 
-              <!--figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item streaming entertainment">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work02.jpg') %>">
-                  <%= image_tag('portfolio/work02.jpg', alt: 'Spotify', width: 350) %>
-                </a>
-                <div class="holder">
-                  <div class="paper has-shadow title">
-                    <div class="content">
-                      Spotify
-                    </div>
-                  </div>
-
-                  <div class="paper has-shadow category">
-                    <div class="content">
-                      music streaming service
-                    </div>
-                  </div>
-                </div>
-              </figure>
-
               <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item marketing entertainment">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work03.jpg') %>">
-                  <%= image_tag('portfolio/work03.jpg', alt: 'Yahoo!', width: 350) %>
-                </a>
-
-                <div class="holder">
-                  <div class="paper has-shadow title">
-                    <div class="content">
-                      yahoo!
-                    </div>
-                  </div>
-
-                  <div class="paper has-shadow category">
-                    <div class="content">
-                      search engine &amp; web portal
-                    </div>
-                  </div>
-                </div>
-              </figure-->
-
-              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item entertainment">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work04.jpg') %>">
-                  <%= image_tag('portfolio/work04.jpg', alt: 'Astrology', width: 350) %>
-                </a>
-                <div class="holder">
-                  <div class="paper has-shadow title">
-                    <div class="content">
-                      astrology
-                    </div>
-                  </div>
-
-                  <div class="paper has-shadow category">
-                    <div class="content">
-                      live astrology services
-                    </div>
-                  </div>
-                </div>
-              </figure>
-
-              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item streaming entertainment">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work05.jpg') %>">
-                  <%= image_tag('portfolio/work05.jpg', alt: 'Hulu', width: 350) %>
-                </a>
-                <div class="holder">
-                  <div class="paper has-shadow title">
-                    <div class="content">
-                      hulu
-                    </div>
-                  </div>
-
-                  <div class="paper has-shadow category">
-                    <div class="content">
-                      video streaming service
-                    </div>
-                  </div>
-                </div>
-              </figure>
-
-              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item marketing entertainment">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work06.jpg') %>">
-                  <%= image_tag('portfolio/work06.jpg', alt: 'NBC Universal', width: 350) %>
-                </a>
+                <a><%= image_tag('portfolio/work06.jpg', alt: 'NBC Universal', width: 350) %></a>
                 <div class="holder">
                   <div class="paper has-shadow title">
                     <div class="content">
@@ -136,31 +65,59 @@
                 </div>
               </figure>
 
-              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item education">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work07.jpg') %>">
-                  <%= image_tag('portfolio/work07.jpg', alt: 'English Up', width: 350) %>
-                </a>
+              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item streaming entertainment">
+                <a><%= image_tag('portfolio/work05.jpg', alt: 'Hulu', width: 350) %></a>
                 <div class="holder">
                   <div class="paper has-shadow title">
                     <div class="content">
-                      English Up
+                      hulu
                     </div>
                   </div>
 
                   <div class="paper has-shadow category">
                     <div class="content">
-                      live virtual classroom
+                      video streaming service
                     </div>
                   </div>
                 </div>
               </figure>
 
+              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item entertainment">
+                <a><%= image_tag('portfolio/work04.jpg', alt: 'Astrology', width: 350) %></a>
+                <div class="holder">
+                  <div class="paper has-shadow title">
+                    <div class="content">
+                      astrology
+                    </div>
+                  </div>
+
+                  <div class="paper has-shadow category">
+                    <div class="content">
+                      live astrology services
+                    </div>
+                  </div>
+                </div>
+              </figure>
 
               <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item entertainment">
-                <a data-rel="prettyphoto" href="<%= image_path('portfolio/work08.jpg') %>">
-                  <%= image_tag('portfolio/work08.jpg', alt: 'Exit Reality', width: 350) %>
-                </a>
+                <a><%= image_tag('portfolio/work11.jpg', alt: 'iVillage', width: 350) %></a>
+                <div class="holder">
+                  <div class="paper has-shadow title">
+                    <div class="content">
+                      ivillage
+                    </div>
+                  </div>
 
+                  <div class="paper has-shadow category">
+                    <div class="content">
+                      media and entertainment
+                    </div>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item entertainment">
+                <a><%= image_tag('portfolio/work08.jpg', alt: 'Exit Reality', width: 350) %></a>
                 <div class="holder">
                   <div class="paper has-shadow title">
                     <div class="content">
@@ -170,7 +127,24 @@
 
                   <div class="paper has-shadow category">
                     <div class="content">
-                      virtual reality
+                      virtual reality pioneer
+                    </div>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item entertainment">
+                <a><%= image_tag('portfolio/work12.jpg', alt: 'Macmillan Digital Education', width: 350) %></a>
+                <div class="holder">
+                  <div class="paper has-shadow title">
+                    <div class="content">
+                      Digital Education
+                    </div>
+                  </div>
+
+                  <div class="paper has-shadow category">
+                    <div class="content">
+                      leading educational publisher
                     </div>
                   </div>
                 </div>
