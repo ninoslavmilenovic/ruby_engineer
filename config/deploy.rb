@@ -1,15 +1,15 @@
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+lock '3.7.1'
 
 set :application, 'ruby_engineer'
 set :repo_url, 'git@github.com:pythogorian/ruby_engineer.git'
-set :rbenv_ruby, '2.1.4'
+set :rbenv_ruby, '2.3.0'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/deployer/apps/ruby_engineer'
+set :deploy_to, '/home/deploy/apps/ruby_engineer'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -35,6 +35,8 @@ set :default_env, { path: '~/.rbenv/shims:~/.rbenv/bin:$PATH' }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+set :passenger_restart_with_touch, true
 
 namespace :deploy do
   desc 'Restart application'
