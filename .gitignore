@@ -29,3 +29,5 @@
 
 # Ignore sitemaps.
 /public/sitemaps
+
+.rbenv-vars

@@ -9,7 +9,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'passenger'
-gem 'impressionist'
+gem 'impressionist', '1.5.1'
 gem 'disqus_rails'
 gem 'redcarpet'
 gem 'activeadmin', github: 'activeadmin'
